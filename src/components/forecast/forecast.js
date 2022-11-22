@@ -9,6 +9,9 @@ import {
 const WEEK_DAYS = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'];
 
 const Forecast = ({ data }) => {
+  const dainInAWeek = new Date().getDay();
+  
+  
   return (
     <>
       <label className="title">Daily</label>
