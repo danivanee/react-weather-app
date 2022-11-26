@@ -22,7 +22,7 @@ const Forecast = ({ data }) => {
     WEEK_DAYS.slice(0, dayInAWeek)
   );
 
-  console.log(forecastDays); 
+  console.log(forecastDays);
 
   return (
     <>
@@ -39,8 +39,13 @@ const Forecast = ({ data }) => {
                     src={`icons/${item.weather[0].icon}.png`}
                   />
                   <label className="day">{forecastDays[idx]}</label>
-                  <label className="description">{item.weather[0].description}</label>
-
+                  <label className="description">
+                    {item.weather[0].description}
+                  </label>
+                  <label className="min-max">
+                    {Math.round(item.main.temp_min)}°C /{" "}
+                    {Math.round(item.main.temp_max)}°C
+                  </label>
                 </div>
               </AccordionItemButton>
             </AccordionItemHeading>
