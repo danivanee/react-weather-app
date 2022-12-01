@@ -65,6 +65,10 @@ const Forecast = ({ data }) => {
                   <label>Clouds</label>
                   <label>{item.clouds.all}</label>
                 </div>
+                <div className="daily-details-grid-item">
+                  <label>Wind speed:</label>
+                  <label>{item.wind.speed} m/s</label>
+                </div>
               </div>
             </AccordionItemPanel>
           </AccordionItem>
