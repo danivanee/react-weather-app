@@ -46,3 +46,10 @@
     grid-template-columns: auto auto;
     padding: 5px 15px;
 }
+
+.daily-details-grid-item {
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
