@@ -9,13 +9,13 @@ import {
 import "./forecast.css";
 
 const WEEK_DAYS = [
-  "Lunes",
-  "Martes",
-  "Miercoles",
-  "Jueves",
-  "Viernes",
-  "Sabado",
-  "Domingo",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday",
 ];
 
 const Forecast = ({ data }) => {
